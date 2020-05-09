@@ -1,0 +1,43 @@
+table.table {
+    font-family: arial;
+    font-size: 10px;
+    border-collapse: collapse;
+    width: 100%;
+}
+
+td.body, th.header {
+    border: 1px solid #dddddd;
+    text-align: center;
+    vertical-align: center;
+    padding: 8px;
+}
+
+tr th.header {
+    font-size: 12px;
+    background-color: #dddddd;
+}
+
+tr td.body {
+    overflow: hidden;
+    text-align: center;
+    vertical-align: center;
+    line-height: 40% !important;
+}
+
+.zebra tr:nth-child(even) {
+    background-color: #dddddd;
+}
+
+.title {
+    font-family: arial;
+    font-size: 14px;
+    width: 100%;
+    text-align: center;
+}
+
+.sub-title {
+    font-family: arial;
+    font-size: 12px;
+    width: 100%;
+    text-align: center;
+}

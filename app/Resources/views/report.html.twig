@@ -1,0 +1,78 @@
+{% set table = "" %}
+{% if context == 1 %}
+    {% set table %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="header">Diploma</th>
+                    <th class="header">Servidores</th>
+                </tr>
+            </thead>
+            <tbody class="zebra">
+                {% for item in diplomas %}
+                    <tr>
+                        <td class="body">{{ item.diplomaIngressoOrgao }}</td>
+                        <td class="body">{{ item.numeroServidores }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endset %}
+{% elseif context == 2 %}
+    {% set table  %}
+        <table class="table">
+            <thead>
+                <tr>
+                    <th class="header">Nome</th>
+                    <th class="header">Atividae</th>
+                    <th class="header">Situação de vinculo</th>
+                </tr>
+            </thead>
+            <tbody class="zebra">
+                {% for item in relacaoServidores %}
+                    <tr>
+                        <td class="body">{{ item.nome }}</td>
+                        <td class="body">{{ item.atividade }}</td>
+                        <td class="body">{{ item.situacaoVinculo }}</td>
+                    </tr>
+                {% endfor %}
+            </tbody>
+        </table>
+    {% endset %}
+{% elseif context == 3 %}
+    {% set table  %}
+        {% for key, item in relacaoServidoresPorOrgaoLotacao %}
+            <h4 class="sub-title">{{ key }}</h4>
+            <table class="table">
+                <thead>
+                    <tr>
+                        <th class="header">Nome</th>
+                        <th class="header">CPF</th>
+                        <th class="header">Matricula</th>
+                        <th class="header">Descrição do Cargo</th>
+                    </tr>
+                </thead>
+                <tbody class="zebra">
+                    {% for i in item %}
+                        <tr>
+                            <td class="body">{{ i.nome }}</td>
+                            <td class="body">{{ i.cpf }}</td>
+                            <td class="body">{{ i.matricula }}</td>
+                            <td class="body">{{ i.descricaoCargo }}</td>
+                        </tr>
+                    {% endfor %}
+                </tbody>
+            </table>
+            <pagebreak />
+        {% endfor %}
+    {% endset %}
+{% endif %}
+
+<htmlpageheader name="header" style="display:none">
+  <h3 class="title">{{ title }}</h3>
+</htmlpageheader>
+<sethtmlpageheader name="header" value="on" show-this-page="1" />
+
+{% block body %}
+    {{ table }}
+{% endblock %}

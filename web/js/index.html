@@ -1,0 +1,58 @@
+<!DOCTYPE HTML>
+<html>
+<head>  
+<script>
+window.onload = function () {
+
+var chart = new CanvasJS.Chart("chartContainer", {
+	animationEnabled: true,
+	exportEnabled: true,
+	theme: "light2", // "light1", "light2", "dark1", "dark2"
+	title:{
+		text: "Gráfico de barras mostrando a quantidade de servidores por UF."
+	},
+	data: [{
+		type: "column",
+		indexLabelFontColor: "#5A5757",
+		indexLabelPlacement: "outside",   
+		dataPoints: [
+                  { label: "AC", y: 7 },
+                  { label: "AL", y: 18 },
+                  { label: "AM", y: 11 },
+                  { label: "AP", y: 18 },
+                  { label: "BA", y: 33 },
+                  { label: "CE", y: 37 },
+                  { label: "DF", y: 78, indexLabel: "Maxima"},
+                  { label: "ES", y: 14 },
+                  { label: "GO", y: 19 },
+                  { label: "MA", y: 18 },
+                  { label: "MG", y: 48 },
+                  { label: "MS", y: 12 },
+                  { label: "MT", y: 14 },
+                  { label: "PA", y: 35 },
+                  { label: "PB", y: 25 },
+                  { label: "PE", y: 37 },
+                  { label: "PI", y: 25 },
+                  { label: "PR", y: 17 },
+                  { label: "RJ", y: 68 },
+                  { label: "RN", y: 18 },
+                  { label: "RO", y: 23 },
+                  { label: "RR", y: 13 },
+                  { label: "RS", y: 24 },
+                  { label: "SC", y: 13 },
+                  { label: "SE", y: 15 },
+                  { label: "SP", y: 29 },
+                  { label: "TO", y: 4, indexLabel: "Mínimo" }
+	      ]
+	}]
+});
+chart.render();
+ 
+}
+</script>
+</head>
+<body>
+<div id="chartContainer" style="height: 370px; width: 100%;"></div>
+<script src="https://canvasjs.com/assets/script/canvasjs.min.js"></script>
+</body>
+</html> 

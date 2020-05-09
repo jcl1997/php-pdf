@@ -1,0 +1,300 @@
+AppBundle\Entity\TbServidor:
+    type: entity
+    table: tb_servidor
+    id:
+        id:
+            type: integer
+            nullable: false
+            options:
+                unsigned: false
+            id: true
+            generator:
+                strategy: IDENTITY
+    fields:
+        atividade:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: ATIVIDADE
+        classeCargo:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: CLASSE_CARGO
+        codOrgExercicio:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: COD_ORG_EXERCICIO
+        codOrgLotacao:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: COD_ORG_LOTACAO
+        codOrgsupExercicio:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: COD_ORGSUP_EXERCICIO
+        codOrgsupLotacao:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: COD_ORGSUP_LOTACAO
+        codUorgExercicio:
+            type: bigint
+            nullable: true
+            options:
+                unsigned: false
+            column: COD_UORG_EXERCICIO
+        codUorgLotacao:
+            type: bigint
+            nullable: true
+            options:
+                unsigned: false
+            column: COD_UORG_LOTACAO
+        codigoAtividade:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: CODIGO_ATIVIDADE
+        cpf:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: CPF
+        dataDiplomaIngressoServicopublico:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: DATA_DIPLOMA_INGRESSO_SERVICOPUBLICO
+        dataIngressoCargofuncao:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: DATA_INGRESSO_CARGOFUNCAO
+        dataIngressoOrgao:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: DATA_INGRESSO_ORGAO
+        dataInicioAfastamento:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: DATA_INICIO_AFASTAMENTO
+        dataNomeacaoCargofuncao:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: DATA_NOMEACAO_CARGOFUNCAO
+        dataTerminoAfastamento:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: DATA_TERMINO_AFASTAMENTO
+        descricaoCargo:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: DESCRICAO_CARGO
+        diplomaIngressoCargofuncao:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: DIPLOMA_INGRESSO_CARGOFUNCAO
+        diplomaIngressoOrgao:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: DIPLOMA_INGRESSO_ORGAO
+        diplomaIngressoServicopublico:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: DIPLOMA_INGRESSO_SERVICOPUBLICO
+        documentoIngressoServicopublico:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: DOCUMENTO_INGRESSO_SERVICOPUBLICO
+        funcao:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: FUNCAO
+        idServidorPortal:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: Id_SERVIDOR_PORTAL
+        jornadaDeTrabalho:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: JORNADA_DE_TRABALHO
+        matricula:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: MATRICULA
+        nivelCargo:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: NIVEL_CARGO
+        nivelFuncao:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: NIVEL_FUNCAO
+        nome:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: NOME
+        opcaoParcial:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: OPCAO_PARCIAL
+        orgExercicio:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: ORG_EXERCICIO
+        orgLotacao:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: ORG_LOTACAO
+        orgsupExercicio:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: ORGSUP_EXERCICIO
+        orgsupLotacao:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: ORGSUP_LOTACAO
+        padraoCargo:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: PADRAO_CARGO
+        referenciaCargo:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: REFERENCIA_CARGO
+        regimeJuridico:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: REGIME_JURIDICO
+        siglaFuncao:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: SIGLA_FUNCAO
+        situacaoVinculo:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: SITUACAO_VINCULO
+        tipoVinculo:
+            type: integer
+            nullable: true
+            options:
+                unsigned: false
+            column: TIPO_VINCULO
+        ufExercicio:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: UF_EXERCICIO
+        uorgExercicio:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: UORG_EXERCICIO
+        uorgLotacao:
+            type: text
+            nullable: true
+            length: 65535
+            options:
+                fixed: false
+            column: UORG_LOTACAO
+    lifecycleCallbacks: {  }
